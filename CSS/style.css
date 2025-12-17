@@ -1,0 +1,85 @@
+:root {
+    --btn-color: #66b2ff;
+  --blue-color:#003471;
+  --white-color:#fff;
+  --red-color:#df1d1d;
+  --dark-color:#212529;
+  --card-bg: #1f1f1f;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+}
+
+.navbar {
+  background-color: var(--blue-color);
+}
+#modeToggle{
+    border: none;
+    padding: 6px 10px;
+}
+#modeToggle:focus,
+#modeToggle:active{
+    box-shadow: none;
+    outline: none;
+}
+
+.hero {
+  height: 80vh;
+  width: 100;
+  background-image: url("../images/header-img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.btn{
+  background-color: var(--blue-color);
+  border: none;
+}
+
+
+/* Dark Mode */
+body.dark {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+
+body.dark .navbar {
+  background-color: var(--dark-color);
+}
+
+body.dark .hero {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("../images/header-img.jpg");
+}
+
+body.dark .card {
+  background-color: var(--card-bg);
+  color: var(--white-color);
+  border: 1px solid var(--dark-color);
+}
+body.dark .form-control {
+  background-color: #333;
+  color: #fff;
+}
+body.dark ::placeholder{
+    color: var(--white-color);
+} 
+body.dark .btn{
+  background-color: var(--btn-color);
+}
+
+body.dark section.menu-section {
+  
+  color: #fff;              
+}
+
+body.dark section.menu-section .accordion-button {
+  background-color: var(--card-bg);
+  color: #fff;
+}
+body.dark section.menu-section .accordion-body{
+  background-color: var(--card-bg);
+  color: var(--white-color);
+}
