@@ -25,20 +25,9 @@ body {
     outline: none;
 }
 
-
-  .hero {
-  height: 80vh; 
-  min-height: 300px;
-  background-image: url("../images/header-img.jpg"); 
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat; 
-}
-
-@media (max-width: 768px) {
-  .hero {
-    height: 40vh; 
-  }
+.carousel-item img{
+    height: 70vh;
+    object-fit: cover;
 }
 
 .btn{
@@ -57,10 +46,8 @@ body.dark .navbar {
   background-color: var(--dark-color);
 }
 
-body.dark .hero {
-  background-image:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("../images/header-img.jpg");
+body.dark .carousel-inner img {
+  opacity: .7;
 }
 
 body.dark .card {
